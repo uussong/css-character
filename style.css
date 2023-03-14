@@ -5,8 +5,73 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #9cf;
 }
 
+@keyframes display {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes move {
+  to {
+    transform: scale(1.1)
+  }
+}
+
+@keyframes color1 {
+  to {
+    color: #fff;
+    background-color: #CE5936;
+  }
+}
+@keyframes color2 {
+  to {
+    color: #fff;
+    background-color: #1A6FA1;
+  }
+}
+@keyframes color3 {
+  to {
+    color: #fff;
+    background-color: #C59237;
+  }
+}
+
+/* 애니메이션 */
+
+.otter:hover .mouth-open {
+  animation: display 2s ease;
+  transition: all 2s linear 1s;
+}
+.otter:hover [class|='ear'] {
+  animation: move 2s ease;
+}
+
+.otter:hover .stone{
+  animation: move 2s ease;
+}
+
+.otter:hover .hand {
+  animation: move 2s ease;
+}
+
+.otter:hover .stone:nth-child(1) {
+  animation: color1 2s ease;
+  transition: all 2s linear 1s;
+}
+.otter:hover .stone:nth-child(2) {
+  animation: color2 2s ease;
+  transition: all 2s linear 1s;
+}
+.otter:hover .stone:nth-child(3) {
+  animation: color3 2s ease;
+  transition: all 2s linear 1s;
+}
 /* 얼굴 */
 .face {
   position: relative;
@@ -68,7 +133,7 @@ body {
 
 .ear-left {
   left: -15px;
-  transform: rotate(-80deg);
+  transform: rotate(-70deg);
 }
 
 .ear-right {
@@ -143,12 +208,49 @@ body {
   border-top: none;
   border-radius: 0 0 25px 25px;
   margin: 0 auto;
+  transform: scale(0);
+}
+
+/* 돌맹이 */
+.stones {
+  display: flex;
+}
+
+.stone {
+  width: 100px;
+  height: 50px;
+  background-color: #8D8E93;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid black;
+  border-radius: 51% 49% 47% 53% / 51% 56% 44% 49%;
+}
+
+.stone:nth-child(1) {
+  color: #F5DED8;
+  background-color: #F5DED8;
+}
+
+.stone:nth-child(2) {
+  color: #D1E2EC;
+  background-color: #D1E2EC;
+  transform: translate(0, 30%);
+}
+
+.stone:nth-child(3) {
+  color: #F4E9D7;
+  background-color: #F4E9D7;
+  transform: rotate(-5deg);
 }
 
 /* 손 */
 .hands {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 .hand {
@@ -158,3 +260,13 @@ body {
   border: 5px solid black;
   border-radius: 25px;
 }
+
+.hand:nth-child(1) {
+  transform: rotate(15deg);
+}
+
+.hand:nth-child(2){
+  transform: rotate(-15deg);
+}
+
+
