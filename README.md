@@ -1,4 +1,4 @@
 # FE 기초 마스터 수달🦦
 
 ## 👀 preview
-![image](https://user-images.githubusercontent.com/77879633/225209231-e3809712-72bb-4124-8dd1-c8d8078f0bfa.png)
+![preview](https://user-images.githubusercontent.com/77879633/225209620-afe91de1-a5ae-42b4-8b18-d1a17c88d166.gif)
