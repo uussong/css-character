@@ -45,32 +45,32 @@ body {
 /* 애니메이션 */
 
 .otter:hover .mouth-open {
-  animation: display 2s ease;
-  transition: all 2s linear 1s;
+  animation: display 3s ease;
+  transition: all 3s linear 1s;
 }
 .otter:hover [class|='ear'] {
-  animation: move 2s ease;
+  animation: move 3s ease;
 }
 
 .otter:hover .stone{
-  animation: move 2s ease;
+  animation: move 3s ease;
 }
 
 .otter:hover .hand {
-  animation: move 2s ease;
+  animation: move 3s ease;
 }
 
 .otter:hover .stone:nth-child(1) {
-  animation: color1 2s ease;
-  transition: all 2s linear 1s;
+  animation: move 3s ease, color1 3s ease;
+  transition: all 3s linear 1s;
 }
 .otter:hover .stone:nth-child(2) {
-  animation: color2 2s ease;
-  transition: all 2s linear 1s;
+  animation: move 3s ease, color2 3s ease;
+  transition: all 3s linear 1s;
 }
 .otter:hover .stone:nth-child(3) {
-  animation: color3 2s ease;
-  transition: all 2s linear 1s;
+  animation: move 3s ease, color3 3s ease;
+  transition: all 3s linear 1s;
 }
 /* 얼굴 */
 .face {
@@ -214,6 +214,7 @@ body {
 /* 돌맹이 */
 .stones {
   display: flex;
+  margin-top: 5px;
 }
 
 .stone {
