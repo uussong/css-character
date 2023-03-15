@@ -45,8 +45,8 @@ body {
 /* 애니메이션 */
 
 .otter:hover .mouth-open {
-  animation: display 3s ease;
-  transition: all 3s linear 1s;
+  animation: display 3s ease 1.2s;
+  transition: all 3s linear;
 }
 .otter:hover [class|='ear'] {
   animation: move 3s ease;
